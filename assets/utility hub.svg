@@ -1,0 +1,91 @@
+<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.1"/>
+    </linearGradient>
+    
+    <!-- Tool icons pattern -->
+    <pattern id="toolPattern" patternUnits="userSpaceOnUse" width="60" height="60" patternTransform="rotate(10)">
+      <circle cx="10" cy="10" r="2" fill="#2563eb" opacity="0.3"/>
+      <rect x="25" y="25" width="4" height="4" fill="#10b981" opacity="0.3"/>
+      <polygon points="45,40 48,45 42,45" fill="#8b5cf6" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background rectangle with pattern -->
+  <rect width="500" height="300" fill="url(#bgGradient)" rx="20" ry="20"/>
+  <rect width="500" height="300" fill="url(#toolPattern)" rx="20" ry="20"/>
+  
+  <!-- Central hexagonal hub (shifted up by 30) -->
+  <polygon 
+    points="250,60 310,90 310,150 250,180 190,150 190,90" 
+    fill="#ffffff" 
+    stroke="#2563eb" 
+    stroke-width="3"
+    filter="drop-shadow(0px 5px 5px rgba(0,0,0,0.2))"/>
+  
+  <!-- Financial tool (calculator) -->
+  <g transform="translate(115, 45)">
+    <rect x="0" y="0" width="50" height="60" rx="5" ry="5" fill="#10b981" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.2))"/>
+    <rect x="5" y="5" width="40" height="15" rx="2" ry="2" fill="#ffffff"/>
+    <rect x="7" y="25" width="8" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <rect x="21" y="25" width="8" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <rect x="35" y="25" width="8" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <rect x="7" y="37" width="8" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <rect x="21" y="37" width="8" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <rect x="35" y="37" width="8" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <rect x="7" y="49" width="8" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <rect x="21" y="49" width="22" height="8" rx="1" ry="1" fill="#ffffff"/>
+    <line x1="50" y1="30" x2="75" y2="60" stroke="#10b981" stroke-width="2"/>
+  </g>
+  
+  <!-- Developer tool (code) -->
+  <g transform="translate(335, 45)">
+    <rect x="0" y="0" width="50" height="60" rx="5" ry="5" fill="#8b5cf6" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.2))"/>
+    <text x="15" y="20" font-family="monospace" font-size="10" fill="#ffffff">&lt;/&gt;</text>
+    <text x="8" y="35" font-family="monospace" font-size="8" fill="#ffffff">{ }</text>
+    <text x="35" y="35" font-family="monospace" font-size="8" fill="#ffffff">[ ]</text>
+    <text x="23" y="50" font-family="monospace" font-size="8" fill="#ffffff">( )</text>
+    <line x1="0" y1="30" x2="-25" y2="60" stroke="#8b5cf6" stroke-width="2"/>
+  </g>
+  
+  <!-- Productivity tool (document) -->
+  <g transform="translate(120, 165)">
+    <rect x="0" y="0" width="50" height="60" rx="3" ry="3" fill="#2563eb" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.2))"/>
+    <rect x="0" y="0" width="10" height="10" rx="0" ry="0" fill="#ffffff"/>
+    <line x1="5" y1="15" x2="35" y2="15" stroke="#ffffff" stroke-width="2"/>
+    <line x1="5" y1="25" x2="25" y2="25" stroke="#ffffff" stroke-width="2"/>
+    <line x1="5" y1="35" x2="30" y2="35" stroke="#ffffff" stroke-width="2"/>
+    <line x1="5" y1="45" x2="20" y2="45" stroke="#ffffff" stroke-width="2"/>
+    <line x1="40" y1="50" x2="69" y2="-16" stroke="#2563eb" stroke-width="2"/>
+  </g>
+  
+  <!-- Browser tool (URL) -->
+  <g transform="translate(340, 165)">
+    <rect x="0" y="0" width="50" height="60" rx="5" ry="5" fill="#f97316" filter="drop-shadow(0px 2px 3px rgba(0,0,0,0.2))"/>
+    <rect x="0" y="0" width="50" height="10" rx="5" ry="5" fill="#f97316" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="5" cy="5" r="2" fill="#ffffff"/>
+    <circle cx="12" cy="5" r="2" fill="#ffffff"/>
+    <circle cx="19" cy="5" r="2" fill="#ffffff"/>
+    <rect x="5" y="15" width="40" height="7" rx="2" ry="2" fill="#ffffff"/>
+    <line x1="7" y1="30" x2="43" y2="30" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="7" y1="35" x2="35" y2="35" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="0" y1="30" x2="-30" y2="-15" stroke="#f97316" stroke-width="2"/>
+  </g>
+  
+  <!-- Central icon - toolbox -->
+  <g transform="translate(231, 111)">
+    <rect x="0" y="0" width="38" height="28" rx="2" ry="2" fill="#2563eb"/>
+    <rect x="-5" y="-9" width="48" height="9" rx="2" ry="2" fill="#2563eb"/>
+    <line x1="3" y1="7" x2="35" y2="7" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="3" y1="14" x2="35" y2="14" stroke="#ffffff" stroke-width="1.5"/>
+    <line x1="3" y1="21" x2="35" y2="21" stroke="#ffffff" stroke-width="1.5"/>
+    <circle cx="19" cy="-4.5" r="2.5" fill="#ffffff"/>
+  </g>
+  
+  <!-- Text (unchanged) -->
+  <text x="250" y="260" font-family="Arial, sans-serif" font-weight="bold" font-size="28" text-anchor="middle" fill="#2563eb">UTILITY HUB</text>
+  <text x="250" y="280" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#4b5563">Tools &amp; Utilities Collection</text>
+</svg>
