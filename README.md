@@ -1,4 +1,4 @@
-# Utility Hub
+# Utility HubX
 
 This repository serves as an index and showcase for my collection of web-based tools & utilities. These projects are categorized by their primary function and are all available as standalone applications.
 
